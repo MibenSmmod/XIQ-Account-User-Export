@@ -186,8 +186,6 @@ def main():
         pp(dfFromFile) # Print XLSX file contents
         ##Go acquire every user in the VIQ
         accountUsers = GetAllAccountUsers()
-        ##Go acquire the 
-        # pp(accountUsers) #print user account list
         while True:
             user_input = input(f'{colorCyan}\nWould you like to replace or append file contents? <Replace>/Append/Cancel: ').strip().lower()
             if user_input == 'Replace' or user_input == 'replace' or user_input == 'R' or user_input == 'r' or user_input == '':
